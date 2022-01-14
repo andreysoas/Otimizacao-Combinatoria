@@ -118,23 +118,4 @@ def HP_controle(d,s,i):
   print('Tempo total:',fim-ini)
   print('\nA solução ótima é:',min)
 
-"""Entrada e chamada da função"""
-
-s = [1,2,3,4,5,6,7]
-d = np.array([0,30,40,55,28,17,33,  
-              30,0,29,68,35,20,56,   
-              40,29,0,47,22,24,46,   
-              55,68,47,0,31,51,27,   
-              28,35,22,31,0,20,25,    
-              17,20,24,51,20,0,36,    
-              33,56,46,27,25,36,0]).reshape(7,7)
-HP_controle(d,s,1)
-
-s = [1,2,3,4,5,6]
-d = np.array([0,25,30,40,42,28,
-              25,0,22,28,30,32,
-              30,22,0,37,42,29,
-              40,28,37,0,31,39,
-              42,30,42,31,0,46,
-              28,32,29,39,46,0]).reshape(6,6)
-HP_controle(d,s,1)
+#Chamar HP_controle com matriz de distâncias,vetor s que rótula os pontos, e o rótulo de início
